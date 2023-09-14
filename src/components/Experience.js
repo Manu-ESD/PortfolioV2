@@ -1,37 +1,57 @@
 import React, { useEffect, useState } from "react";
 import SkillCard from "./SkillCard";
-import { TbBrandBootstrap } from "react-icons/tb";
-import { Tb24Hours } from "react-icons/tb";
+import SkillList from "../Utility/Objects/SkillList";
 
 const Experience = () => {
-  const [IC, setIC] = useState();
+  //const [other, setother] = useState(null);
+
   //Imporing icons
   const [skillListwithimportedIcons, setSkillListwithimportedIcons] = useState(
     []
   );
-  var IIC;
+
   async function importModule() {
-    IIC = await import("react-icons/tb");
-    console.log("INDIRECT", IIC.TbBrandBootstrap);
+    try {
+      const updatedSkillList = await Promise.all(
+        SkillList.map(async (skill) => {
+          const value = await import(`react-icons/${skill.path}`);
+          const name =  skill.Icon;
+          const {default:IconComponent} = value.`${name}`;
+          return {...skill, Icon: <IconComponent />};
+        })
+      );
+      
+      console.log("INDIRECT", IIC.TbBrandBootstrap);
+      return IIC.TbBrandBootstrap;
+    } catch (error) {
+      console.error("Error imporing", error);
+      return null;
+    }
   }
 
   useEffect(() => {
-    importModule().then(() => {
-      await setIC(IIC.TbBrandBootstrap);
-      console.log("Direct", TbBrandBootstrap);
-      console.log("I2", IC);
+    importModule().then((importedICON) => {
+      console.log("TEST", importedICON);
+      setSkillListwithimportedIcons(importedICON);
     });
   }, []);
-  return (
+
+  useEffect(() => {
+    console.log("IC", other);
+  }, [other]);
+
+  return other === null ? (
+    <p className="text-center">Loading...</p>
+  ) : (
     <div className="h-screen w-full" id="experience">
       <div className="w-[90%] mx-auto">
         {/* Skills */}
         <h3 className="text-[1.5rem] text-black font-bold my-3">Skills:</h3>
         <div className="h-[50vh] w-full flex flex-wrap gap-3">
-          <SkillCard
-            SkillIcon={TbBrandBootstrap}
-            skillName="Bootstrap"
-          ></SkillCard>
+        skillListwithimportedIcons.map(skill, index){
+          <SkillCard SkillIcon={skill.Icon} skillName={skill.Name}></SkillCard>
+        }
+          
         </div>
       </div>
     </div>
