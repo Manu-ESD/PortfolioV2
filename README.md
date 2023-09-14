@@ -82,7 +82,7 @@ add Hero image and description
 Download Resume Button
 Hire Me
 
-
+https://colorhunt.co/palette/e5dcc3c7bea2aaa4929a9483
 
 Mobile Version
 --------------
