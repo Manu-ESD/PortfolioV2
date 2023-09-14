@@ -69,13 +69,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-
-
-TASK LISK 
+TASK LISK
 
 Home Page,
 Experience page,
 Project Page,
 Contact Page,
 
+1)Home page
 
+add Hero image and description
