@@ -14,15 +14,19 @@ const Experience = () => {
     try {
       const updatedSkillList = await Promise.all(
         SkillList.map(async (skill) => {
-          const value = await import(`react-icons/${skill.path}`);
-          const name =  skill.Icon;
-          const {default:IconComponent} = value.`${name}`;
-          return {...skill, Icon: <IconComponent />};
+          const { default: IconComponent } = await import(
+            `react-icons/${skill.path}`
+          );
+
+          return {
+            ...skill,
+            Icon: () => {
+              `IconComponent.${skill.Icon}`;
+            },
+          };
         })
       );
-      
-      console.log("INDIRECT", IIC.TbBrandBootstrap);
-      return IIC.TbBrandBootstrap;
+      return updatedSkillList;
     } catch (error) {
       console.error("Error imporing", error);
       return null;
@@ -32,15 +36,12 @@ const Experience = () => {
   useEffect(() => {
     importModule().then((importedICON) => {
       console.log("TEST", importedICON);
+      console.log("IconComponent", importedICON);
       setSkillListwithimportedIcons(importedICON);
     });
   }, []);
 
-  useEffect(() => {
-    console.log("IC", other);
-  }, [other]);
-
-  return other === null ? (
+  return skillListwithimportedIcons === [] ? (
     <p className="text-center">Loading...</p>
   ) : (
     <div className="h-screen w-full" id="experience">
@@ -48,10 +49,12 @@ const Experience = () => {
         {/* Skills */}
         <h3 className="text-[1.5rem] text-black font-bold my-3">Skills:</h3>
         <div className="h-[50vh] w-full flex flex-wrap gap-3">
-        skillListwithimportedIcons.map(skill, index){
-          <SkillCard SkillIcon={skill.Icon} skillName={skill.Name}></SkillCard>
-        }
-          
+          {skillListwithimportedIcons.map((skill, index) => (
+            <SkillCard
+              SkillIcon={skill.Icon}
+              skillName={skill.Name}
+            ></SkillCard>
+          ))}
         </div>
       </div>
     </div>
