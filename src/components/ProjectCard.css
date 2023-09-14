@@ -1,0 +1,4 @@
+.main:hover .Bclick {
+  display: block;
+  transition-duration: 1s;
+}
