@@ -79,3 +79,10 @@ Contact Page,
 1)Home page
 
 add Hero image and description
+Download Resume Button
+Hire Me
+
+
+
+Mobile Version
+--------------
