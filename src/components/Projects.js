@@ -3,6 +3,7 @@ import ProjectCard from "./ProjectCard";
 import jarvisProject from "../Utility/Images/Jarvis-project.png";
 import NetflixProject from "../Utility/Images/Netflix-Clone.png";
 import Chatbot from "../Utility/Images/Chatbot.png";
+import Esite from "../Utility/Images/Ecommercesite.png";
 
 const Projects = () => {
   return (
@@ -27,7 +28,12 @@ const Projects = () => {
           discription=""
           gitL=""
         ></ProjectCard>
-        <ProjectCard spath="" name="" discription="" gitL=""></ProjectCard>
+        <ProjectCard
+          spath={Esite}
+          name="E-Commerce Site"
+          discription=""
+          gitL=""
+        ></ProjectCard>
       </div>
     </div>
   );
