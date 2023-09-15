@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import SkillCard from "./SkillCard";
 import { AiOutlineHtml5, AiOutlineGithub } from "react-icons/ai";
 import {
@@ -22,57 +23,118 @@ const Experience = () => {
         {/* Skills */}
         <h3 className="text-[1.5rem] text-black font-bold my-3">Skills:</h3>
         <div className="h-[20vh] w-full flex flex-wrap gap-3">
-          <SkillCard
-            key={0}
-            SkillIcon={AiOutlineHtml5}
-            skillName="HTML5"
-          ></SkillCard>
-          <SkillCard
-            key={0}
-            SkillIcon={TbBrandCss3}
-            skillName="CSS3"
-          ></SkillCard>
-          <SkillCard
-            key={0}
-            SkillIcon={TbBrandTailwind}
-            skillName="Tailwind"
-          ></SkillCard>
-          <SkillCard
-            key={0}
-            SkillIcon={TbBrandBootstrap}
-            skillName="Bootstrap"
-          ></SkillCard>
-          <SkillCard
-            key={0}
-            SkillIcon={BiLogoJavascript}
-            skillName="Javascript"
-          ></SkillCard>
-          <SkillCard
-            key={0}
-            SkillIcon={BiLogoReact}
-            skillName="React"
-          ></SkillCard>
-          <SkillCard
-            key={0}
-            SkillIcon={TbBrandRedux}
-            skillName="Redux"
-          ></SkillCard>
-          <SkillCard
-            key={0}
-            SkillIcon={BiLogoJava}
-            skillName="Java"
-          ></SkillCard>
-          <SkillCard
-            key={0}
-            SkillIcon={AiOutlineGithub}
-            skillName="Git"
-          ></SkillCard>
-          <SkillCard
-            key={0}
-            SkillIcon={BiLogoMongodb}
-            skillName="MongoDB"
-          ></SkillCard>
+          <motion.div
+            initial={{ opacity: 0, x: "-50%" }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, ease: "easeIn", delay: 0 }}
+          >
+            <SkillCard
+              key={0}
+              SkillIcon={AiOutlineHtml5}
+              skillName="HTML5"
+            ></SkillCard>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: "-50%" }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, ease: "easeIn", delay: 0 }}
+          >
+            <SkillCard
+              key={0}
+              SkillIcon={TbBrandCss3}
+              skillName="CSS3"
+            ></SkillCard>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: "-50%" }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, ease: "easeIn", delay: 0 }}
+          >
+            <SkillCard
+              key={0}
+              SkillIcon={TbBrandTailwind}
+              skillName="Tailwind"
+            ></SkillCard>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: "-50%" }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, ease: "easeIn", delay: 0 }}
+          >
+            <SkillCard
+              key={0}
+              SkillIcon={TbBrandBootstrap}
+              skillName="Bootstrap"
+            ></SkillCard>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: "-50%" }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, ease: "easeIn", delay: 0 }}
+          >
+            <SkillCard
+              key={0}
+              SkillIcon={BiLogoJavascript}
+              skillName="Javascript"
+            ></SkillCard>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: "-50%" }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, ease: "easeIn", delay: 0 }}
+          >
+            <SkillCard
+              key={0}
+              SkillIcon={BiLogoReact}
+              skillName="React"
+            ></SkillCard>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: "-50%" }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, ease: "easeIn", delay: 0 }}
+          >
+            <SkillCard
+              key={0}
+              SkillIcon={TbBrandRedux}
+              skillName="Redux"
+            ></SkillCard>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: "-50%" }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, ease: "easeIn", delay: 0 }}
+          >
+            <SkillCard
+              key={0}
+              SkillIcon={BiLogoJava}
+              skillName="Java"
+            ></SkillCard>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: "-50%" }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, ease: "easeIn", delay: 0 }}
+          >
+            <SkillCard
+              key={0}
+              SkillIcon={AiOutlineGithub}
+              skillName="Git"
+            ></SkillCard>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: "-50%" }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, ease: "easeIn", delay: 0 }}
+          >
+            <SkillCard
+              key={0}
+              SkillIcon={BiLogoMongodb}
+              skillName="MongoDB"
+            ></SkillCard>
+          </motion.div>
         </div>
+        {/* Experience */}
         <h3 className="text-[1.5rem] text-black font-bold my-3">
           Work Experience:
           <div className="h-[80vh] w-full flex flex-wrap gap-3">
