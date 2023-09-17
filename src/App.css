@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Courgette&family=Inter:wght@400;500&family=Manrope&family=Righteous&family=Roboto&family=Sofia&display=swap");
+
 body {
-  background-color: #a19f9b;
+  background-color: #252734ec;
+}
+
+@font-face {
+  font-family: "MainFont";
+  src: url("../src/Utility/Others/DupincelLargeTest-SemiBold.otf")
+    format("opentype");
 }

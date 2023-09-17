@@ -26,7 +26,8 @@ const ParticleBg = () => {
       options={{
         style: {
           position: "absolute",
-          width: "60%",
+          width: "100%",
+          zIndex: 1,
         },
         fpsLimit: 120,
 

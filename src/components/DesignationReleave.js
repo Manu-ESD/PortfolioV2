@@ -11,18 +11,19 @@ const DesignationReleave = () => {
         1000,
         "ReactJS Developer",
         1000,
-        "Youtuber",
+        "IoT Enthusiast",
         1000,
         "Tech Enthusiast",
         1000,
       ]}
       wrapper="span"
-      speed={5}
+      speed={10}
       style={{
         fontSize: "1.5rem",
         display: "inline-block",
-        color: "Black",
+        color: "white",
         fontWeight: "bold",
+        fontFamily: "serif",
       }}
       repeat={Infinity}
     />

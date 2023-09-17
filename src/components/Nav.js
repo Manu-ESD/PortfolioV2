@@ -12,9 +12,14 @@ const Nav = () => {
   };
 
   return (
-    <div className=" bg-navcolor fixed h-[70px] w-2/5 rounded-2xl bottom-8 right-96 flex items-center z-10">
+    <div className=" bg-[#25273400] border-[1px] border-[#ffffff] fixed h-[70px] w-2/5 rounded-2xl bottom-8 right-96 flex items-center z-10">
       <ul className="flex justify-around w-full mr-5 ml-5">
-        <Link to="home" smooth="true" onClick={() => handleClick(0)}>
+        <Link
+          to="home"
+          smooth="true"
+          onClick={() => handleClick(0)}
+          className=" cursor-pointer"
+        >
           <li
             className={`flex flex-col justify-center items-center translate-y-2 ${
               LISTVALUE === 0 ? "list" : ""
@@ -27,7 +32,12 @@ const Nav = () => {
           </li>
         </Link>
 
-        <Link to="experience" smooth="true" onClick={() => handleClick(1)}>
+        <Link
+          to="experience"
+          smooth="true"
+          onClick={() => handleClick(1)}
+          className=" cursor-pointer"
+        >
           <li
             className={`flex flex-col justify-center items-center translate-y-2 ${
               LISTVALUE === 1 ? "list" : ""
@@ -40,7 +50,12 @@ const Nav = () => {
           </li>
         </Link>
 
-        <Link to="projects" smooth="true" onClick={() => handleClick(2)}>
+        <Link
+          to="projects"
+          smooth="true"
+          onClick={() => handleClick(2)}
+          className=" cursor-pointer"
+        >
           <li
             className={`flex flex-col justify-center items-center translate-y-2 ${
               LISTVALUE === 2 ? "list" : ""
@@ -53,7 +68,12 @@ const Nav = () => {
           </li>
         </Link>
 
-        <Link to="contact" smooth="true" onClick={() => handleClick(3)}>
+        <Link
+          to="contact"
+          smooth="true"
+          onClick={() => handleClick(3)}
+          className=" cursor-pointer"
+        >
           <li
             className={`flex flex-col justify-center items-center translate-y-2 ${
               LISTVALUE === 3 ? "list" : ""
@@ -66,12 +86,13 @@ const Nav = () => {
           </li>
         </Link>
       </ul>
+
       <div
-        className={`h-5 w-5 bg-yellow absolute -top-[26px] p-6 rounded-full -z-20 border-4 border-[#a19f9b] duration-300 iconback ${
+        className={`h-5 w-5 bg-yellow absolute -top-[26px] p-6 rounded-full -z-20 border-4 border-[#fff]  duration-300 iconback ${
           LISTVALUE === 0 ? "left-[43px]" : ""
         }  ${LISTVALUE === 1 ? "left-[162px]" : ""}  ${
           LISTVALUE === 2 ? "left-[286px]" : ""
-        }  ${LISTVALUE === 3 ? "left-[402px]" : ""}`}
+        }  ${LISTVALUE === 3 ? "left-[400px]" : ""}`}
       ></div>
     </div>
   );

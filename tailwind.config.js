@@ -7,7 +7,7 @@ module.exports = {
       navcolor: "#1B355A",
       iconbackcolor: "#BBBFCA",
       textcolor: "#ffffff",
-      yellow: "#E55604",
+      yellow: "#29a587",
     },
     extend: {},
   },

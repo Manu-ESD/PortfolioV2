@@ -2,3 +2,7 @@
   display: block;
   transition-duration: 1s;
 }
+
+.viewbut:hover .arrow {
+  transform: translateX(5px);
+}
