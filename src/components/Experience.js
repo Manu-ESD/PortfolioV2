@@ -148,7 +148,7 @@ const Experience = () => {
         </div>
       </div>
 
-      <div className="h-[100vh] w-[100vh]  flex justify-center items-center absolute bottom-[-20%] right-[-200px]">
+      <div className="h-[50vh] w-[100vh]  flex justify-center items-center absolute bottom-[0%] right-[-200px]">
         <div className="h-[50vh] w-[50vh] rounded-[50%] bg-[#ffffff00] border-[1px] border-[#ffffff30] absolute  opacity-[1]"></div>
         <div className="h-[40vh] w-[40vh] rounded-[50%] bg-[#ff00]  border-[1px] border-[#ffffff30] absolute opacity-[1]"></div>
         <div className="h-[30vh] w-[30vh] rounded-[50%] bg-[#00f0]  border-[1px] border-[#ffffff30] absolute opacity-[1]"></div>

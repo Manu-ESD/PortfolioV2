@@ -9,6 +9,7 @@ import wave from "../Utility/Images/wave.png";
 import "./Home.css";
 import { BiLogoDiscordAlt, BiLogoLinkedinSquare } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
@@ -132,31 +133,36 @@ const Home = () => {
             initial={{ opacity: 0, x: "-50%" }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, ease: "easeIn", delay: 2.25 }}
-            className="my-5 text-[#fff] font-thin"
+            className="my-5 text-[#fff] text-[0.85rem] w-[80%]"
+            style={{ fontFamily: "Manrope" }}
           >
             As a frontend developer with experience in React JS, Redux,
             JavaScript, and CSS, I have successfully designed and implemented
             responsive websites that adapt to various screen sizes and devices.
           </motion.p>
-          <div className="flex flex-row w-[50%] h-10">
-            <motion.button
-              initial={{ opacity: 0, x: "-50%" }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7, ease: "easeIn", delay: 3 }}
-              className="w-[170px] h-[45px] rounded-[50px]  text-textcolor text-sm mr-5 px-5 border border-[1px] border-white  flex flex-row items-center justify-around duration-300 bg-yellow hover:bg-[#ffffff00]"
-            >
-              Hire Me
-              <FiThumbsUp></FiThumbsUp>
-            </motion.button>
-            <motion.button
+          <div className="flex flex-row w-[55%] h-10 gap-5">
+            <Link to="contact" smooth="true" className="w-[150px] h-[45px]">
+              <motion.button
+                initial={{ opacity: 0, x: "-50%" }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.7, ease: "easeIn", delay: 3 }}
+                className="w-[150px] h-[45px] rounded-[50px]  text-textcolor text-sm mr-5 px-5 border border-[1px] border-white  flex flex-row items-center justify-around duration-300 bg-yellow hover:bg-[#ffffff00]"
+              >
+                Hire Me
+                <FiThumbsUp></FiThumbsUp>
+              </motion.button>
+            </Link>
+            <motion.a
               initial={{ opacity: 0, x: "-50%" }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, ease: "easeIn", delay: 3.75 }}
               className="w-[170px] h-[45px] rounded-[50px]  text-textcolor text-sm mr-5  px-8 py-3 border border-[1px] border-white  flex flex-row items-center justify-around duration-300 hover:bg-yellow"
+              href="https://drive.google.com/file/d/1wTZoylXaHoXU1EHmB98U8eeV7tATdynu/view"
+              target="_blank"
             >
               Resume
               <AiOutlineDownload></AiOutlineDownload>
-            </motion.button>
+            </motion.a>
           </div>
         </div>
       </div>

@@ -1,10 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import ContactMain from "../Utility/Images/Contact main.png";
 import { BiMapAlt } from "react-icons/bi";
 import { IoMdContact } from "react-icons/io";
 import { AiOutlineMail } from "react-icons/ai";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({});
+
+  const changeHandler = (event) => {
+    setFormData({ ...formData, [event.target.name]: event.target.value });
+  };
+
+  //   guggillamanohar@gmail.com
+  //   Password
+  // E4D47D186D5851F27528CAD65BF9B6CF05E1
+  // smtp.elasticemail.com
+
+  // Port
+  // 2525
+
+  // token
+  // b82993cc-dacc-4100-8dcd-607de7a8fe6f
+
+  const handleMail = (event) => {
+    event.preventDefault();
+    const config = {
+      //SecureToken: "b82993cc-dacc-4100-8dcd-607de7a8fe6f",
+      Host: "smtp.elasticemail.com",
+      Username: "guggillamanohar@gmail.com",
+      Password: "E4D47D186D5851F27528CAD65BF9B6CF05E1",
+      To: "guggillamanohar@gmail.com",
+      From: formData.emailaddress,
+      Subject: "qwerty",
+      Body: formData.message,
+    };
+    if (window.Email) {
+      window.Email.send(config).then((message) => alert(message));
+      console.log(formData);
+      console.log("Button Clicked");
+    }
+    console.log("Button Clicked");
+  };
   return (
     <div
       className="h-screen w-[100%] mx-auto bg-gradient-to-b -translate-y-3 from-[#1c1e26] relative"
@@ -62,8 +98,11 @@ const Contact = () => {
             </div>
           </div>
         </div>
-
-        <div className="form w-3/6 py-14 flex flex-col gap-3 relative z-20">
+        {/* ///////////////////////////////FORM ////////////////////////// */}
+        <form
+          className="form w-3/6 py-14 flex flex-col gap-3 relative z-20"
+          onSubmit={handleMail}
+        >
           <div className="flex flex-row">
             <div className="flex flex-col w-[42%]">
               <label className="text-[#fff] text-[0.65rem] font-semibold mb-2 translate-x-4">
@@ -71,20 +110,35 @@ const Contact = () => {
               </label>
               <input
                 className="w-[90%] h-[35px] rounded-[18px] focus:outline-[#ffffff00] bg-[#111117] border-[1px] border-[#fff] text-[#fff] p-3 text-[0.7rem]"
+                type="text"
+                required
                 style={{ border: "1px solid #ccc", color: "white" }}
+                name="Username"
+                onChange={changeHandler}
               ></input>
             </div>
             <div className="flex flex-col w-[42%]">
               <label className="text-[#fff] text-[0.65rem] font-semibold mb-2 translate-x-4 ">
                 YOUR MAIL ADDRESS <span className="text-yellow">*</span>
               </label>
-              <input className="w-[90%] h-[35px] rounded-[18px] focus:outline-yellow bg-[#111117] border-[1px] border-[#fff] text-[#fff] p-3 text-[0.7rem]"></input>
+              <input
+                className="w-[90%] h-[35px] rounded-[18px] focus:outline-yellow bg-[#111117] border-[1px] border-[#fff] text-[#fff] p-3 text-[0.7rem]"
+                type="email"
+                name="emailaddress"
+                onChange={changeHandler}
+                required
+              ></input>
             </div>
           </div>
           <label className="text-[#fff] text-[0.65rem] font-semibold translate-x-4">
             SELECT OBJECTIVE <span className="text-yellow">*</span>
           </label>
-          <select className="w-[80%] h-[35px] rounded-[18px] focus:outline-yellow bg-[#111117] border-[1px] border-[#fff] text-[#fff] px-3 text-[0.7rem]">
+          <select
+            className="w-[80%] h-[35px] rounded-[18px] focus:outline-yellow bg-[#111117] border-[1px] border-[#fff] text-[#fff] px-3 text-[0.7rem]"
+            required
+            name="objective"
+            onChange={changeHandler}
+          >
             <option className="hover:bg-yellow text-[#fff]">Hire</option>
             <option className="hover:bg-yellow text-[#fff]">Freelancing</option>
             <option className="hover:bg-yellow text-[#fff]">
@@ -94,22 +148,34 @@ const Contact = () => {
           <label className="text-[#fff] text-[0.65rem] font-semibold translate-x-4 ">
             MESSAGE
           </label>
-          <textarea className="w-[80%] h-[100px] rounded-[20px] focus:outline-yellow bg-[#111117] border-[1px] border-[#fff] text-[#fff] p-3 text-[0.7rem]"></textarea>
-          <button className="w-[170px] h-[35px] rounded-[50px] mt-5  text-textcolor translate-x-72 text-[0.65rem] mr-5 px-5 border border-[1px] border-white  flex flex-row items-center justify-around duration-300 bg-yellow hover:bg-[#ffffff00]">
+          <textarea
+            className="w-[80%] h-[100px] rounded-[20px] focus:outline-yellow bg-[#111117] border-[1px] border-[#fff] text-[#fff] p-3 text-[0.7rem]"
+            required
+            name="message"
+            onChange={changeHandler}
+          ></textarea>
+          <button
+            className="w-[170px] h-[35px] rounded-[50px] mt-5  text-textcolor translate-x-72 text-[0.65rem] mr-5 px-5 border border-[1px] border-white  flex flex-row items-center justify-around duration-300 bg-yellow hover:bg-[#ffffff00]"
+            type="submit"
+          >
             SEND MESSAGE
           </button>
-        </div>
-
-        <div className="h-[100vh] w-[100vh]  flex justify-center items-center absolute top-[-50%] right-[-300px]">
+        </form>
+        <div className="h-[50vh] w-[50vh]  flex justify-center items-center absolute top-[-25%] right-[-150px] z-0">
           <div className="h-[50vh] w-[50vh] rounded-[50%] bg-[#ffffff00] border-[1px] border-[#ffffff6c] absolute  opacity-[1]"></div>
           <div className="h-[40vh] w-[40vh] rounded-[50%] bg-[#ff00]  border-[1px] border-[#ffffff79] absolute opacity-[1]"></div>
           <div className="h-[30vh] w-[30vh] rounded-[50%] bg-[#00f0]  border-[1px] border-[#ffffff70] absolute opacity-[1]"></div>
         </div>
-
         <div className="h-[100vh] w-[100vh]  flex justify-center items-center absolute top-[3%] right-[320px] z-0">
           <div className="h-[20vh] w-[20vh] rounded-[50%] bg-[#ffffff00] border-[1px] border-[#ffffff6c] absolute  opacity-[1]"></div>
           <div className="h-[15vh] w-[15vh] rounded-[50%] bg-[#ff00]  border-[1px] border-[#ffffff79] absolute opacity-[1]"></div>
           <div className="h-[10vh] w-[10vh] rounded-[50%] bg-[#00f0]  border-[1px] border-[#ffffff70] absolute opacity-[1]"></div>
+        </div>
+        <div className="absolute text-[#f0f0f069] bottom-16 right-24">
+          <p>Made with ❤️ love by</p>
+          <p className="" style={{ fontFamily: "Courgette" }}>
+            G.V.Manohar
+          </p>
         </div>
       </div>
     </div>
