@@ -5,10 +5,11 @@ import { IoMdContact } from "react-icons/io";
 import { AiOutlineMail } from "react-icons/ai";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({});
+  const [formData, setFormData] = useState({ objective: "Hire" });
 
   const changeHandler = (event) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
+    console.log(formData);
   };
 
   //   guggillamanohar@gmail.com
@@ -30,9 +31,17 @@ const Contact = () => {
       Username: "guggillamanohar@gmail.com",
       Password: "E4D47D186D5851F27528CAD65BF9B6CF05E1",
       To: "guggillamanohar@gmail.com",
-      From: formData.emailaddress,
-      Subject: "qwerty",
-      Body: formData.message,
+      From: "g.v.manohar3@gmail.com",
+      Subject: "Mail from Portfolio",
+      Body:
+        "UserName:" +
+        formData.Username +
+        "<br/> Email:" +
+        formData.emailaddress +
+        "<br/> Objective:" +
+        formData.objective +
+        "<br/> Message:" +
+        formData.message,
     };
     if (window.Email) {
       window.Email.send(config).then((message) => alert(message));
@@ -114,6 +123,7 @@ const Contact = () => {
                 required
                 style={{ border: "1px solid #ccc", color: "white" }}
                 name="Username"
+                value={formData.Username}
                 onChange={changeHandler}
               ></input>
             </div>
@@ -125,6 +135,7 @@ const Contact = () => {
                 className="w-[90%] h-[35px] rounded-[18px] focus:outline-yellow bg-[#111117] border-[1px] border-[#fff] text-[#fff] p-3 text-[0.7rem]"
                 type="email"
                 name="emailaddress"
+                value={formData.emailaddress}
                 onChange={changeHandler}
                 required
               ></input>
@@ -137,12 +148,23 @@ const Contact = () => {
             className="w-[80%] h-[35px] rounded-[18px] focus:outline-yellow bg-[#111117] border-[1px] border-[#fff] text-[#fff] px-3 text-[0.7rem]"
             required
             name="objective"
+            value={formData.objective}
             onChange={changeHandler}
           >
-            <option className="hover:bg-yellow text-[#fff]">Hire</option>
-            <option className="hover:bg-yellow text-[#fff]">Freelancing</option>
-            <option className="hover:bg-yellow text-[#fff]">
+            <option value="Hire" className="hover:bg-yellow text-[#fff]">
+              Hire
+            </option>
+            <option value="Freelance" className="hover:bg-yellow text-[#fff]">
+              Freelance
+            </option>
+            <option
+              value="Collaboration"
+              className="hover:bg-yellow text-[#fff]"
+            >
               Collaboration
+            </option>
+            <option value="Other" className="hover:bg-yellow text-[#fff]">
+              Other
             </option>
           </select>
           <label className="text-[#fff] text-[0.65rem] font-semibold translate-x-4 ">
@@ -153,6 +175,7 @@ const Contact = () => {
             required
             name="message"
             onChange={changeHandler}
+            value={formData.message}
           ></textarea>
           <button
             className="w-[170px] h-[35px] rounded-[50px] mt-5  text-textcolor translate-x-72 text-[0.65rem] mr-5 px-5 border border-[1px] border-white  flex flex-row items-center justify-around duration-300 bg-yellow hover:bg-[#ffffff00]"
