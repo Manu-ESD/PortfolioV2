@@ -32,7 +32,10 @@ const Contact = () => {
         formData.message,
     };
     if (window.Email) {
-      window.Email.send(config).then((message) => alert(message));
+      window.Email.send(config).then((message) => {
+        alert(message);
+        setFormData({ objective: "Hire" });
+      });
       console.log(formData);
       console.log("Button Clicked");
     }

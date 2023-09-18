@@ -44,7 +44,7 @@ const Experience = () => {
           }}
           initial="hidden"
           animate={mainControls}
-          transition={{ duration: 0.5, delay: 1.5 }}
+          transition={{ duration: 0.5, delay: 0.25 }}
           className="text-[1.5rem] text-[#fff] font-[MainFont] font-bold my-3 mb-10"
         >
           Skills:
