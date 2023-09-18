@@ -1,5 +1,4 @@
 import React from "react";
-import "./ProjectCard.css";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
 const ProjectCard = (props) => {
@@ -23,10 +22,14 @@ const ProjectCard = (props) => {
             {props.name}
           </h1>
         </div>
-        <button className="text-[#fff] flex flex-row justify-between items-center font-bold w-[55%] text-[0.8rem] ml-2">
+        <a
+          className="text-[#fff] flex flex-row justify-between items-center font-bold w-[55%] text-[0.8rem] ml-2"
+          href={props.gitL}
+          target="_blank"
+        >
           See project
           <AiOutlineArrowRight className="ml-[50px] arrow text-yellow"></AiOutlineArrowRight>
-        </button>
+        </a>
         <div className="h-[15vh] w-[15vh]  flex justify-center items-center  bottom-[-10%] right-[-25px] z-0 absolute">
           <div className="h-[25vh] w-[25vh] rounded-[50%] bg-[#ffffff00] border-[1px] border-[#ffffff30] absolute  opacity-[1]"></div>
           <div className="h-[20vh] w-[20vh] rounded-[50%] bg-[#ff00]  border-[1px] border-[#ffffff30] absolute opacity-[1]"></div>

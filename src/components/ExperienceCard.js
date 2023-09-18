@@ -3,7 +3,7 @@ import React from "react";
 const ExperienceCard = () => {
   return (
     <div>
-      <div className="h-[210px] w-[450px] border-2 rounded-md  bg-[#111117] border-[#0c0c10] border-[1px] flex flex-col justify-around items-left p-3 my-4 absolute overflow-hidden hover:border-[#fff] hover:scale-[1.02]">
+      <div className="h-[210px] w-[80%] sm:w-[450px]  border-2 rounded-md  bg-[#111117] border-[#0c0c10] border-[1px] flex flex-col justify-around items-left p-3 my-4 absolute overflow-hidden hover:border-[#fff] hover:scale-[1.02]">
         <h1 className="text-[1.5rem] text-[#fff]">Frontend Developer</h1>
         <p className="text-[1rem] text-left text-[#fff]">
           From: 03/2021 -- Present

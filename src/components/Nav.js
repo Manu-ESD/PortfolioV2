@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { AiOutlineHome, AiOutlineMail, AiOutlineProfile } from "react-icons/ai";
 import { PiSuitcaseSimpleDuotone } from "react-icons/pi";
 import { Link } from "react-scroll";
-import "./Nav.css";
 
 const Nav = () => {
   const [LISTVALUE, setLISTVALUE] = useState(0);
@@ -12,7 +11,7 @@ const Nav = () => {
   };
 
   return (
-    <div className=" bg-[#25273400] border-[1px] border-[#ffffff] fixed h-[70px] w-2/5 rounded-2xl bottom-8 right-96 flex items-center z-10">
+    <div className=" bg-[#25273400] border-[1px] border-[#ffffff] fixed h-[70px] w-[80%] sm:w-[506px] rounded-2xl sm:bottom-8 bottom-28 left-[calc(10%)] sm:left-[calc(50%-253px)] flex items-center z-10">
       <ul className="flex justify-around w-full mr-5 ml-5">
         <Link
           to="home"
@@ -89,10 +88,10 @@ const Nav = () => {
 
       <div
         className={`h-5 w-5 bg-yellow absolute -top-[26px] p-6 rounded-full -z-20 border-4 border-[#fff]  duration-300 iconback ${
-          LISTVALUE === 0 ? "left-[43px]" : ""
-        }  ${LISTVALUE === 1 ? "left-[162px]" : ""}  ${
-          LISTVALUE === 2 ? "left-[286px]" : ""
-        }  ${LISTVALUE === 3 ? "left-[400px]" : ""}`}
+          LISTVALUE === 0 ? "left-[6.5%] sm:left-[43px]" : ""
+        }  ${LISTVALUE === 1 ? "left-[28.7%] sm:left-[162px]" : ""}  ${
+          LISTVALUE === 2 ? "left-[53.5%] sm:left-[286px]" : ""
+        }  ${LISTVALUE === 3 ? "left-[75%] sm:left-[400px]" : ""}`}
       ></div>
     </div>
   );
