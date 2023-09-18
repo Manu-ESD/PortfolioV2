@@ -11,7 +11,7 @@ const Nav = () => {
   };
 
   return (
-    <div className=" bg-[#25273400] border-[1px] border-[#ffffff] fixed h-[70px] w-[80%] sm:w-[506px] rounded-2xl sm:bottom-8 bottom-28 left-[calc(10%)] sm:left-[calc(50%-253px)] flex items-center z-10">
+    <div className=" bg-[#25273400] border-[1px] border-[#ffffff] fixed h-[70px] w-[80%] sm:w-[506px] rounded-2xl sm:bottom-4 bottom-28 left-[calc(10%)] sm:left-[calc(50%-253px)] flex items-center z-10">
       <ul className="flex justify-around w-full mr-5 ml-5">
         <Link
           to="home"
