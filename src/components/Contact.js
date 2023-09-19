@@ -54,14 +54,10 @@ const Contact = () => {
 
           <div className="h-[100vh] w-[100vh] scale-75 sm:scale-100  flex justify-center items-center absolute top-[40vh] left-[-50vh] sm:top-[0%] sm:left-[-250px] z-10 scale-50 sm:scale-100 sm:-translate-y-0">
             <div className="h-[70vh] w-[70vh] rounded-[50%] bg-[#ffffff00] border-[1px] border-[#ffffff2a] absolute z-0">
-              <a
-                href="https://github.com/Manu-ESD"
-                target="_blank"
-                className="h-[5vh] w-[5vh] rounded-[50%] bg-yellow  border-[1px] border-[#ffffff75] absolute opacity-[1] translate-x-[370px] translate-y-[50px] sm:translate-x-[300px] sm:translate-y-[50px] flex justify-center items-center"
-              >
+              <button className="h-[5vh] w-[5vh] rounded-[50%] bg-yellow  border-[1px] border-[#ffffff75] absolute opacity-[1] translate-x-[370px] translate-y-[50px] sm:translate-x-[300px] sm:translate-y-[50px] flex justify-center items-center">
                 <BiMapAlt className="text-[#fff]"></BiMapAlt>
                 <div className="h-[5vh] w-[5vh] rounded-[50%] bg-[#fff0]  border-[1px] border-[#ffffff75] absolute opacity-[1] scale-50"></div>
-              </a>
+              </button>
               <div className="absolute translate-x-[27rem] translate-y-[52px] sm:translate-x-[22rem] sm:translate-y-[52px] text-[#fff]">
                 <p>Address</p>
                 <p className="text-[0.7rem]">Hyderabad, Talangan, India</p>
@@ -69,28 +65,20 @@ const Contact = () => {
             </div>
 
             <div className="h-[60vh] w-[60vh] rounded-[50%] bg-[#ff00]  border-[1px] border-[#ffffff4f] absolute z-0">
-              <a
-                href="https://github.com/Manu-ESD"
-                target="_blank"
-                className="h-[5vh] w-[5vh] rounded-[50%] bg-yellow  border-[1px] border-[#ffffff75] absolute opacity-[1] translate-x-[420px] translate-y-[100px]   sm:translate-x-[335px] sm:translate-y-[120px] flex justify-center items-center"
-              >
+              <button className="h-[5vh] w-[5vh] rounded-[50%] bg-yellow  border-[1px] border-[#ffffff75] absolute opacity-[1] translate-x-[420px] translate-y-[100px]   sm:translate-x-[335px] sm:translate-y-[120px] flex justify-center items-center">
                 <IoMdContact className="text-[#fff]"></IoMdContact>
                 <div className="h-[5vh] w-[5vh] rounded-[50%] bg-[#fff0]  border-[1px] border-[#ffffff75] absolute opacity-[1] scale-50"></div>
-              </a>
+              </button>
               <div className="absolute translate-x-[30rem] translate-y-[100px] sm:translate-x-[24rem] sm:translate-y-[120px] text-[#fff]">
                 <p>Contact</p>
                 <p className="text-[0.7rem]">+917780633848</p>
               </div>
             </div>
             <div className="h-[50vh] w-[50vh] rounded-[50%] bg-[#00f0]  border-[1px] border-[#ffffff46] absolute z-0">
-              <a
-                href="https://github.com/Manu-ESD"
-                target="_blank"
-                className="h-[5vh] w-[5vh] rounded-[50%] bg-yellow  border-[1px] border-[#ffffff75] absolute opacity-[1] translate-x-[410px] translate-y-[165px] sm:translate-x-[298px] sm:translate-y-[200px] flex justify-center items-center"
-              >
+              <button className="h-[5vh] w-[5vh] rounded-[50%] bg-yellow  border-[1px] border-[#ffffff75] absolute opacity-[1] translate-x-[410px] translate-y-[165px] sm:translate-x-[298px] sm:translate-y-[200px] flex justify-center items-center">
                 <AiOutlineMail className="text-[#fff]"></AiOutlineMail>
                 <div className="h-[5vh] w-[5vh] rounded-[50%] bg-[#fff0]  border-[1px] border-[#ffffff75] absolute opacity-[1] scale-50"></div>
-              </a>
+              </button>
               <div className="absolute translate-x-[29.5rem] translate-y-[170px] sm:translate-x-[21.5rem] sm:translate-y-[200px] text-[#fff]">
                 <p>Mail</p>
                 <p className="text-[0.7rem]">g.v.manohar3@gmail.com</p>

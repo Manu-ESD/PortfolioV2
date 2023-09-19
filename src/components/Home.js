@@ -43,7 +43,7 @@ const Home = () => {
           }}
         ></motion.img> */}
         {/* //Big Concentric Circles */}
-        <div className="sm:h-[90vh] sm:w-[76vh] h-[50vh] w-[50vh]  z-10 -translate-x-8 flex justify-center items-center absolute top-[40%] sm:top-[-5%] right-[-50px] sm:right-[50px] scale-75 sm:scale-125 overflow-hidden">
+        <div className="sm:h-[90vh] sm:w-[76vh] h-[50vh] w-[50vh]  z-20 -translate-x-8 flex justify-center items-center absolute top-[40%] sm:top-[-5%] right-[-50px] sm:right-[50px] scale-75 sm:scale-125 overflow-hidden">
           <div className="h-[50vh] w-[50vh]  rounded-[50%] bg-[#ffffff00] border-[1px] border-[#ffffff30]  absolute  opacity-[1]"></div>
           <div
             id="bigCircle"
@@ -103,7 +103,7 @@ const Home = () => {
         <ParticleBg className="absolute top-0"></ParticleBg>
       </motion.div>
 
-      <div className="h-[100vh] sm:h-[80vh] w-6/6 sm:w-3/6 z-10 absolute left-0 ml-[30px] sm:ml-[60px]">
+      <div className="h-[40vh] top-[100px] sm:-translate-y-0 sm:h-[80vh] w-6/6 sm:w-3/6 z-10 absolute left-0 ml-[30px] sm:ml-[60px]">
         <motion.h1
           initial={{ opacity: 0, y: "75" }}
           animate={{ opacity: 1, y: 0 }}
