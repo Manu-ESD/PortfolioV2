@@ -22,7 +22,7 @@ const Projects = () => {
   return (
     <div
       ref={ref}
-      className="h-[200vh] sm:h-screen w-[100%] m-auto bg-gradient-to-t -translate-y-3 from-[#1c1e26]"
+      className="h-auto sm:h-screen w-[100%] m-auto bg-gradient-to-t -translate-y-3 from-[#1c1e26]"
       id="projects"
     >
       <div className="w-[90%] mx-auto">
