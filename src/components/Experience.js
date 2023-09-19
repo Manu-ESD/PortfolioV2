@@ -32,7 +32,7 @@ const Experience = () => {
   return (
     <div
       ref={ref}
-      className="h-[135vh] sm:h-screen w-full bg-gradient-to-b -translate-y-3 from-[#1c1e26] relative overflow-hidden"
+      className="h-[145vh] sm:h-screen w-full bg-gradient-to-b -translate-y-3 from-[#1c1e26] relative overflow-hidden"
       id="experience"
     >
       <div className="w-[90%] mx-auto">
@@ -49,7 +49,7 @@ const Experience = () => {
         >
           Skills:
         </motion.h3>
-        <div className="h-[60vh] sm:h-[20vh] w-full flex flex-wrap gap-3 mb-10">
+        <div className="h-[65vh] sm:h-[20vh] w-full flex flex-wrap gap-3 mb-10">
           <motion.div
             variants={{
               visible: { opacity: 1, x: 0 },
@@ -200,7 +200,7 @@ const Experience = () => {
           initial="hidden"
           animate={mainControls}
           transition={{ duration: 0.5, delay: 1.5 }}
-          className="text-[1.5rem] text-[#fff] font-[MainFont] font-bold my-3 mb-10"
+          className="text-[1.5rem] text-[#fff] font-[MainFont] font-bold translate-y-5 mb-10"
         >
           Work Experience:
         </motion.h3>
