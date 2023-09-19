@@ -175,7 +175,7 @@ const Contact = () => {
           <div className="h-[15vh] w-[15vh] rounded-[50%] bg-[#ff00]  border-[1px] border-[#ffffff79] absolute opacity-[1]"></div>
           <div className="h-[10vh] w-[10vh] rounded-[50%] bg-[#00f0]  border-[1px] border-[#ffffff70] absolute opacity-[1]"></div>
         </div>
-        <div className="absolute text-[#f0f0f069] bottom-0 right-24 sm:-translate-y-0 -translate-y-0">
+        <div className="absolute text-[#f0f0f069] bottom-0 right-24 sm:-translate-y-0 -translate-y-[100px]">
           <p>Built with 🙂 Passion by</p>
           <p className="" style={{ fontFamily: "Courgette" }}>
             G.V.Manohar
