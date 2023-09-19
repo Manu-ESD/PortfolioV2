@@ -1,5 +1,8 @@
 import "./App.css";
 import Spage from "./components/Spage";
+import ReactGA from "react-ga";
+
+ReactGA.initialize("G-MQX64RFL0Q");
 
 function App() {
   return (

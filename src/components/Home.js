@@ -9,10 +9,15 @@ import wave from "../Utility/Images/wave.png";
 import { BiLogoDiscordAlt, BiLogoLinkedinSquare } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
 import { Link } from "react-scroll";
+import ReactGA from "react-ga";
 
 const Home = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, []);
 
   useEffect(() => {
     if (isInView) {
