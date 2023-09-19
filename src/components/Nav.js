@@ -11,7 +11,7 @@ const Nav = () => {
   };
 
   return (
-    <div className=" bg-[#25273400] border-[1px] border-[#ffffff] fixed h-[70px] w-[80%] sm:w-[506px] rounded-2xl sm:bottom-8 bottom-10 left-[calc(10%)] sm:left-[calc(50%-253px)] flex items-center z-10">
+    <div className=" bg-[#25273400] border-[1px] border-[#ffffff] fixed h-[70px] w-[310px] sm:w-[506px] rounded-2xl sm:bottom-8 bottom-10 left-[calc(50%-155px)] sm:left-[calc(50%-253px)] flex items-center z-10">
       <ul className="flex justify-around w-full mr-5 ml-5">
         <Link
           to="home"
@@ -88,10 +88,10 @@ const Nav = () => {
 
       <div
         className={`h-5 w-5 bg-yellow absolute -top-[26px] p-6 rounded-full -z-20 border-4 border-[#fff]  duration-300 iconback ${
-          LISTVALUE === 0 ? "left-[6.5%] sm:left-[43px]" : ""
-        }  ${LISTVALUE === 1 ? "left-[28.7%] sm:left-[162px]" : ""}  ${
-          LISTVALUE === 2 ? "left-[53.5%] sm:left-[286px]" : ""
-        }  ${LISTVALUE === 3 ? "left-[75%] sm:left-[400px]" : ""}`}
+          LISTVALUE === 0 ? "left-[6%] sm:left-[43px]" : ""
+        }  ${LISTVALUE === 1 ? "left-[28.2%] sm:left-[162px]" : ""}  ${
+          LISTVALUE === 2 ? "left-[53%] sm:left-[286px]" : ""
+        }  ${LISTVALUE === 3 ? "left-[74%] sm:left-[400px]" : ""}`}
       ></div>
     </div>
   );
