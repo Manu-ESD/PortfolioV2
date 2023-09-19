@@ -16,8 +16,15 @@ const Home = () => {
   const isInView = useInView(ref, { once: true });
 
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
+    ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
+
+  function DownHandle() {
+    ReactGA.event({
+      category: "User",
+      action: "Resume Downloaded",
+    });
+  }
 
   useEffect(() => {
     if (isInView) {
@@ -173,6 +180,7 @@ const Home = () => {
               className="w-[170px] h-[45px] rounded-[50px]  text-textcolor text-sm mr-5  px-8 py-3 border border-[1px] border-white  flex flex-row items-center justify-around duration-300 gap-4 sm:gap-0 hover:bg-yellow"
               href="https://drive.google.com/file/d/1wTZoylXaHoXU1EHmB98U8eeV7tATdynu/view"
               target="_blank"
+              onClick={DownHandle}
             >
               Resume
               <AiOutlineDownload></AiOutlineDownload>
