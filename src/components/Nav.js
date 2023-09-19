@@ -87,7 +87,7 @@ const Nav = () => {
       </ul>
 
       <div
-        className={`h-5 w-5 bg-yellow absolute -top-[26px] p-6 rounded-full -z-20 border-4 border-[#fff]  duration-300 iconback ${
+        className={`h-5 w-5 bg-yellow absolute -top-[27.5px] sm:-top-[26px] p-6 rounded-full -z-20 border-4 border-[#fff]  duration-300 iconback ${
           LISTVALUE === 0 ? "left-[6%] sm:left-[43px]" : ""
         }  ${LISTVALUE === 1 ? "left-[28.2%] sm:left-[162px]" : ""}  ${
           LISTVALUE === 2 ? "left-[53%] sm:left-[286px]" : ""
