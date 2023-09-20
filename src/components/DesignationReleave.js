@@ -18,7 +18,7 @@ const DesignationReleave = () => {
       wrapper="span"
       speed={10}
       style={{
-        fontSize: "1.5rem",
+        fontSize: "1.4rem",
         display: "inline-block",
         color: "white",
         fontWeight: "bold",

@@ -31,14 +31,13 @@ const Experience = () => {
   }, [isInView]);
   return (
     <div
-      ref={ref}
-      className="h-fit min-h-screen w-full relative flex justify-center items-center"
+      className="h-fit  min-h-screen w-full relative flex justify-center items-center"
       id="experience"
     >
       <div className="w-full h-[100%]  z-[0] absolute top-0 right-0 bg-gradient-to-b from-[#1c1e26] opacity-100"></div>
       <div className=" w-[95vw] h-fit mx-auto p-[2.5vw]">
         <div className=" h-fit w-[100%]">
-          <div className="w-[100%] h-fit">
+          <div ref={ref} className="w-[100%] h-fit">
             {/* Skills */}
             <motion.h3
               variants={{

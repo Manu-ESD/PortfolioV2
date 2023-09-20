@@ -74,7 +74,7 @@ const Home = () => {
             initial={{ opacity: 0, y: "75" }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeIn", delay: 0.75 }}
-            className=" text-[2rem] sm:text-[3rem] font-bold text-[#fff] mb-4 font-[MainFont]"
+            className=" text-[1.8rem] sm:text-[3rem] font-bold text-[#fff] mb-4 font-[MainFont]"
           >
             <span className="text-yellow">Guggilla</span> Venkata Manohar
           </motion.h1>

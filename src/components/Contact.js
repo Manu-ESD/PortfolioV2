@@ -55,7 +55,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="absolute text-[#f0f0f069] bottom-10 right-24 sm:-translate-y-0 -translate-y-[100px] z-20">
+      <div className="absolute text-[#f0f0f069] bottom-10 sm:right-24 right-[10px] sm:-translate-y-0 -translate-y-[100px] z-20">
         <p>Built with 🙂 Passion by</p>
         <p className="" style={{ fontFamily: "Courgette" }}>
           G.V.Manohar
