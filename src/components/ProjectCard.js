@@ -5,17 +5,12 @@ const ProjectCard = (props) => {
   const colorvalue = props.color;
   return (
     <div>
-      <div className="main h-[380px] w-[270px] border-2 rounded-2xl  bg-[#111117] border-[#0c0c10] flex flex-col justify-around items-left p-3 my-4 relative overflow-hidden z-20">
-        <div
-          className="h-[45%] w-[95%] flex justify-center items-center mx-auto rounded-2xl"
-          style={{ backgroundColor: colorvalue }}
-        >
-          <img
-            className="webimg relative w-[70%] h-[60%] shadow-2xl"
-            src={props.spath}
-            alt="Project"
-          ></img>
-        </div>
+      <div className="main h-[380px] w-[270px] border-2 rounded-2xl  bg-[#111117] border-[#0c0c10] flex flex-col justify-around items-left py-3 relative overflow-hidden z-20 min-[1250px]:scale-100 scale-90">
+        <img
+          className="webimg relative h-[40%] mx-auto shadow-md shadow-yellow "
+          src={props.spath}
+          alt="Project"
+        ></img>
         <div className="translate-y-[-20px] ml-2">
           <hr className="text-yellow h-[3px] w-[30%] mb-[20px]"></hr>
           <h1 className="text-[1rem] text-[#fff] text-left font-bold">

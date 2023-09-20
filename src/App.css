@@ -9,15 +9,13 @@ body {
   src: url("../src/Utility/Others/DupincelLargeTest-SemiBold.otf")
     format("opentype");
 }
+.skillcard .CCircles {
+  transition-duration: 400ms;
+}
 
 .skillcard:hover .CCircles {
   transform: scale(4);
-  transition-duration: 500ms;
   animation-timing-function: ease-in-out;
-}
-
-@keyframes CCircleanimation {
-  from: ;
 }
 
 /* Projects */
@@ -36,7 +34,7 @@ body {
 }
 
 .main:hover {
-  border: 1px solid white;
+  transform: scale(1.03);
 }
 
 /* Navbar */

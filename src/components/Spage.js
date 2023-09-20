@@ -8,7 +8,7 @@ import Contact from "./Contact";
 const Spage = () => {
   return (
     <>
-      <div className="mx-auto container">
+      <div className="mx-auto">
         <Home></Home>
         <Nav></Nav>
         <Experience></Experience>
