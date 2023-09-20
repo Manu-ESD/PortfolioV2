@@ -134,7 +134,7 @@ const Home = () => {
         </div>
         <div className=" h-fit w-fit realtive z-10 flex justify-center items-center">
           {/* //Big Concentric Circles */}
-          <div className="min-[750px]:h-[605px]  min-[750px]:w-[605px] w-[385px] h-[385px]  z-20 top-[-5%] right-[2%] flex justify-center items-center relative overflow-hidden">
+          <div className="min-[750px]:h-[605px]  min-[750px]:w-[605px] w-[385px] h-[385px]  z-20 min-[750px]:top-[-5%] min-[750px]:right-[2%] flex justify-center items-center relative overflow-hidden">
             <div className="min-[750px]:h-[605px] min-[750px]:w-[605px] w-[385px] h-[385px]  rounded-[50%] bg-[#ffffff00] border-[1px] border-[#fffffff0]  absolute  opacity-[1]"></div>
             <div
               id="bigCircle"
