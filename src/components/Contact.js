@@ -34,7 +34,12 @@ const Contact = () => {
     if (window.Email) {
       window.Email.send(config).then((message) => {
         alert(message);
-        setFormData({ objective: "Hire" });
+        setFormData({
+          objective: "Hire",
+          Username: "",
+          emailaddress: "",
+          message: "",
+        });
       });
       console.log(formData);
       console.log("Button Clicked");
