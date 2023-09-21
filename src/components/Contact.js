@@ -178,7 +178,7 @@ const Contact = () => {
                   </button>
                   <div className=" text-[#fff]">
                     <p>Address</p>
-                    <p className="text-[0.7rem]">Hyderabad, Talangan, India</p>
+                    <p className="text-[0.65rem]">Hyderabad, Talangan, India</p>
                   </div>
                 </div>
                 <div className="flex flex-row justify-start items-center absolute top-[25%] min-[1225px]:left-[75%] left-[15%] gap-3">
@@ -187,7 +187,7 @@ const Contact = () => {
                   </button>
                   <div className="text-[#fff]">
                     <p>Contact</p>
-                    <p className="text-[0.7rem]">+917780633848</p>
+                    <p className="text-[0.65rem]">+917780633848</p>
                   </div>
                 </div>
                 <div className="flex flex-row justify-start items-center absolute top-[45%] min-[1225px]:left-[82%] left-[10%] gap-3">
@@ -196,7 +196,9 @@ const Contact = () => {
                   </button>
                   <div className=" text-[#fff]">
                     <p>Mail</p>
-                    <p className="text-[0.7rem]">g.v.manohar3@gmail.com</p>
+                    <p className="text-[0.65rem]">
+                      venkatamanoharguggilla@gmail.com
+                    </p>
                   </div>
                 </div>
               </div>

@@ -161,7 +161,7 @@ const Home = () => {
               </a>
               {/* third small circle  */}
               <a
-                href="https://www.linkedin.com/in/manoharguggilla/"
+                href="https://www.linkedin.com/in/venkata-manohar-g-a76213292"
                 target="_blank"
                 className="h-[35px] w-[35px] rounded-[50%] bg-yellow  border-[1px] border-[#ffffff75] absolute top-[50%] min-[750px]:left-[-3.5%] left-[-5%] relative flex justify-center items-center"
               >
