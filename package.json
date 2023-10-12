@@ -1,7 +1,20 @@
 {
   "name": "portfoliov1",
   "version": "0.1.0",
+  "description": "Guggilla Venkata Manohar Frontend Developer Portfolio website | React.js | Javascript | Tailwind CSS | Redux | HTML | CSS | Bootstrap | JAVA",
   "private": true,
+  "author": "Guggilla Venkata Manohar",
+  "keywords": [
+    "Guggilla Venkata Manohar",
+    "Venkata Manohar",
+    "Manohar",
+    "Manohar's Portfolio",
+    "Manohar Portfolio",
+    "Frontend Developer",
+    "React Js",
+    "Javascript",
+    "Portfolio Website"
+],
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",

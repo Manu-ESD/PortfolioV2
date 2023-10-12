@@ -1,25 +1,26 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Manohar's Portfolio",
+  "name": "Guggilla Venkata Manohar Protfolio | Frontend Developer",
+  "description": "Guggilla Venkata Manohar Frontend Developer Portfolio website | React.js | Javascript | Tailwind CSS | Redux | HTML | CSS | Bootstrap | JAVA",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "Icon-98@2x.png",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/png"
     },
     {
-      "src": "logo192.png",
+      "src": "ic_launcher_foreground.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "playstore-icon.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#ffffff",
   "background_color": "#ffffff"
 }
